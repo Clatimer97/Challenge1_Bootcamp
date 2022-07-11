@@ -20,3 +20,10 @@
  * Changing colors as needed for better contrast 
  * Removing redundant elements 
  * Commenting changes within the stylesheet so that other coders can acknowledge changes 
+
+ ## Assets
+ ![Screenshot](./Horiseon_Webpage.jpeg)
+ ![LinktoRepository](https://github.com/Clatimer97/Challenge1_Bootcamp/tree/main/Assets)
+
+ ## Author
+ -[@CallanLatimer](https://github.com/Clatimer97)
