@@ -7,12 +7,12 @@
  ## List of Changes
  [HTML]
  * Creating a short yet descriptive title for the page
- * Linking all <img> elements appropriately 
- * Creating working links using <a> element
- * Replacing unnecessary <div> elements with semantic elements like <nav>, <aside>, <header>, and <footer>
+ * Linking all `<img>` elements appropriately 
+ * Creating working links using `<a>` element
+ * Replacing unnecessary `<div>` elements with semantic elements like `<nav>`, `<aside>`, `<header>`, and `<footer>`
  * Replacing excessive class IDs with targeted element selectors 
  * Ensuring appropriate spacing to increase readability
- * Adding alt tags to <img> elements
+ * Adding alt tags to `<img>` elements
 
  [CSS]
  * Listing elements in the order in which they appear in the stylesheet for better readability
@@ -23,7 +23,7 @@
 
  ## Assets
  ![Screenshot](./Horiseon_Webpage.jpeg)
- ![LinktoRepository](https://github.com/Clatimer97/Challenge1_Bootcamp/tree/main/Assets)
+ [LinktoRepository](https://github.com/Clatimer97/Challenge1_Bootcamp)
 
  ## Author
- -[@CallanLatimer](https://github.com/Clatimer97)
+ [@CallanLatimer](https://github.com/Clatimer97)
