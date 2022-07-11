@@ -20,6 +20,3 @@
  * Changing colors as needed for better contrast 
  * Removing redundant elements 
  * Commenting changes within the stylesheet so that other coders can acknowledge changes 
-
- ## Assets
-![Screenshot] ()

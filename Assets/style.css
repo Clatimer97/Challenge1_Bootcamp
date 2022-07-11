@@ -1,4 +1,4 @@
-/*Universal Selector for Horiseon page*/
+/*Universal Selector for Horiseon page, defines parameter for page box*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -16,11 +16,8 @@ body {
     color: #ffffff;
 }
 
-h2 {
-    font-size: 20px;
-}
-
-/*change class name to "top" to avoid confusion from changing semantic element to header*/
+/*remove h2 element selector because class selection has already selected it, therefore it is overruled*/
+/*remove class and use header element to select individual elements within the header parent element*/
 
 header h1 {
     display: inline-block;
@@ -28,8 +25,9 @@ header h1 {
 }
 
 /*change color for better contrast*/
-header h1 .seo {
-    color: #d9dcd6;
+/*no need to have "header h1 .seo"; .seo is a class selector and will be applied regardless of specific element selectors*/
+.seo {
+    color: darkgrey;
 }
 
 header nav {
@@ -40,7 +38,7 @@ header nav {
     font-size: 20px;
 }
 
-/*combine list-style-none to nav ul li element*/
+/*combine list-style-none into nav ul li element*/
 
 header nav ul li {
     display: inline-block;
@@ -48,11 +46,6 @@ header nav ul li {
     list-style-type: none;
 }
 
-main {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 a {
     color: #ffffff;
     text-decoration: none;
@@ -62,6 +55,7 @@ p {
     font-size: 16px;
 }
 
+/*moved .hero class selector before main element selector for better readability; .hero appears first in the HTML*/
 .hero {
     height: 800px;
     width: 100%;
@@ -69,6 +63,31 @@ p {
     background-image: url("./Images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+main {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*combine search-engine-optimization, media-management etc. tags into one class id because they all have the same styling elements*/
+.content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.content img {
+    max-height: 200px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .float-left {
@@ -93,7 +112,7 @@ aside {
 }
  
 /*use element selector to select elements within aside elements. Negates the need for multiple classes with the same content*/
-
+/*use element selector to select section to ensure code does not break and that parameters are still in place*/
 aside section {  
     margin-bottom: 32px;
     color: #ffffff;
@@ -109,26 +128,6 @@ aside img {
     margin: 10px auto;
     max-width: 150px;
 }
-
-/*combine search-engine-optimization, media-management etc. tags into one class id because they all have the same styling elements*/
-.content {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.content img {
-    max-height: 200px;
-}
-
-.content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 
 /*no need to have footer class. Just change semantic element to "footer"; combined footer element changes into one group*/
  footer {
